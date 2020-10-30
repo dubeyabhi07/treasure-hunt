@@ -35,7 +35,7 @@ let questionAnswerMap = {
 }
 
 let constants = {
-    serverPort : 9876,
+    serverPort : 8076,
     questionNextImageMap: questionNextImageMap,
     questionAnswerMap: questionAnswerMap,
     imageQuestionMap:imageQuestionMap
