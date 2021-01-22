@@ -8,14 +8,14 @@ module.exports = function(app) {
             .get(function(req,resp){
                 resp.render('screenA', { 
                     title: 'Welcome To Online treasure Hunt !',
-                    imageId : 0 });
+                    imageId : "welcome" });
             });
 
     app.route('/start')
             .get(function(req,resp){
                 resp.render('screenB', { 
                     title: 'Question_1',
-                    imageId : 1 });
+                    imageId : 0 });
             });
 
     app.route('/end')

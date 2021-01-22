@@ -21,9 +21,8 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'resources')));
 
 routes(app);
-
-app.listen(gconst.serverPort, function() {
-    console.log("Server for tresure-hunt, running on port :"+gconst.serverPort);
+app.listen(process.env.PORT, function() {
+    console.log("Server for tresure-hunt, running on port :"+process.env.PORT);
 });
 
 module.exports = app;

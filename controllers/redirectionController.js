@@ -5,6 +5,7 @@ exports.redirect = function (req, response) {
     console.log(req.params.id)
     imageId = req.params.id
     switch(imageId) {
+        case "111176":
         case "29087":
         case "3987":
         case "42087":

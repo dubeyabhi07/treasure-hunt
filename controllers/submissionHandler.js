@@ -25,14 +25,16 @@ exports.handleSubmitRequest = function (req, response) {
         case "Question_6":
         case "Question_7":
         case "Question_8":
-          if(gconst.questionAnswerMap[question]==processedAnswer){
+        case "Question_9":
+          if(gconst.questionAnswerMap[question]==processedAnswer
+             || gconst.alternateQuestionAnswerMap[question]==processedAnswer ){
               response.status(200).send({url : "/success/"+gconst.questionNextImageMap[question]})
           }
           else{
               response.status(400).send({err : "wrong Answer!"})
           }
           break;
-        case "Question_9":
+        case "Question_10":
             if(gconst.questionAnswerMap[question]==processedAnswer){
                 response.status(200).send({url : "/end"})
             }
